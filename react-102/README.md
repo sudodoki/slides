@@ -2,7 +2,7 @@ RailsReactor Flux stuff
 =======================
 
 [Videos](https://www.youtube.com/playlist?list=PLr1siHsWN79A_U2x5H_G1ohhUr1okt3nc)
-
+Also, on the first video you can see slides from [React @ kottans](http://kottans.org/js-slides/react/)
 Start
 =====
 
@@ -15,4 +15,4 @@ Start
 Build
 =====
 
-There're folder based README's to build sources.
+There're READMEs in corresponding folders with build instructions (supposedly).
