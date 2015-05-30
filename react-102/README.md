@@ -20,7 +20,7 @@ Links
 [Counter example using Flux](react-flux)
 ----------------------------------------
 
-~~Counter example using Atoms~~
+[Counter example using Atoms](react-cursors)
 -------------------------------
 
 ~~Counter example using Observables~~
