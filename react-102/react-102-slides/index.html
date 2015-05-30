@@ -405,7 +405,7 @@ pre .chunk {
 </section>
   </div>
   <div class="slide hidden" id="slide-2">
-    <section class="slide-content"><p>Solutions:</p>
+    <section class="slide-content"><h3 id="solutions-">Solutions:</h3>
 <ol>
 <li>No interaction</li>
 <li>Callbacks</li>
@@ -495,16 +495,254 @@ pre .chunk {
 </section>
   </div>
   <div class="slide hidden" id="slide-18">
+    <section class="slide-content"><h1 id="cursors-stuff">Cursors &amp; stuff</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><h1 id="flashback-om-https-github-com-omcljs-om-">Flashback: <a href="https://github.com/omcljs/om">Om</a></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-20">
+    <section class="slide-content"><h1 id="clojurescript">Clojurescript</h1>
+<h2 id="yet-more-perfomant-than-js-article-http-swannodette-github-io-2013-12-17-the-future-of-javascript-mvcs-">yet more perfomant than JS. <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">Article</a></h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-21">
+    <section class="slide-content"><h1 id="immutability">Immutability</h1>
+<h2 id="-persistent-data-structure-http-en-wikipedia-org-wiki-persistent_data_structure-"><a href="http://en.wikipedia.org/wiki/Persistent_data_structure">Persistent data structure</a></h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><pre><code>(def a (list 1 2 3))
+(def b (conj a 4))
+(def c (conj (rest a) 5))</code></pre>
+<h1 id="-cljs-immutable-list-illustration-images-cljs-lists-gif-images-cljs-lists-gif-"><a href="images/cljs-lists.gif"><img src="images/cljs-lists.gif" alt="cljs immutable list illustration"></a></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><pre><code>(def brown [0 1 2 3 4 5 6 7 8])
+(def blue (assoc brown 5 &#39;beef))</code></pre>
+<p><a href="images/cljs-vectors.png"><img src="images/cljs-vectors.png" alt="cljs immutable vectors illustration"></a></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h1 id="for-js">For JS</h1>
+<h2 id="-immutable-http-facebook-github-io-immutable-js-by-fb"><a href="http://facebook.github.io/immutable-js/">Immutable</a> by FB</h2>
+<h2 id="-mori-http-swannodette-github-io-mori-from-cljs"><a href="http://swannodette.github.io/mori/">Mori</a> from cljs</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-25">
+    <section class="slide-content"><p><img width='800' src="images/Cursor-example.png" alt="Cursor example"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><h3 id="built-on-top-of-react-using-concept-from-om">Built on top of React, using concept from Om</h3>
+<ul>
+<li><a href="https://github.com/omniscientjs/omniscient">Omniscient</a></li>
+<li><a href="https://github.com/moreartyjs/moreartyjs">Moreartyjs</a></li>
+<li><a href="https://github.com/Yomguithereal/baobab-react">Baobab-React</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><h3 id="so-main-approaches">So, main approaches</h3>
+<ul>
+<li>Single atom</li>
+<li>Multiple atoms</li>
+<li>(Fluxish &amp; immutable models)</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-28">
+    <section class="slide-content"><h1 id="-demo-time-react-cursors-"><a href="../react-cursors">Demo time!</a></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-29">
+    <section class="slide-content"><h1 id="frp">FRP</h1>
+<h2 id="aka-functional-reactive-programming">aka Functional Reactive Programming</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-30">
+    <section class="slide-content"><h2 id="functional-reactive-programming">Functional + Reactive Programming</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><h3 id="what-is-reactive-">What is &#39;Reactive&#39;?</h3>
+<ul>
+<li>Excel cells/formulas</li>
+<li><pre><code>var x = 1;
+boundedvar y = x + 1;
+x = 2;
+console.log(y); // -&gt; 3</code></pre>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-32">
+    <section class="slide-content"><h3 id="what-is-functional-">What is &#39;Functional&#39;?</h3>
+<ul>
+<li>functional programming style</li>
+<li>pure functions (side-effect free)</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><h3 id="best-fit-">Best fit?</h3>
+<ul>
+<li>handling user input</li>
+<li>dealing with asynchronous operations</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-34">
+    <section class="slide-content"><h3 id="popular-implementations-in-js">Popular implementations in JS</h3>
+<ul>
+<li><a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a></li>
+<li><a href="https://baconjs.github.io/">Bacon.js</a></li>
+<li><a href="http://github.com/rpominov/kefir">kefir</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><h1 id="main-abstractions">Main abstractions</h1>
+<ul>
+<li>Stream/Observable</li>
+<li>Bus/Subject?</li>
+<li>Property<style>
+table { width: 100%; min-height: 350px;}
+</style></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>Singular</strong></th>
+<th style="text-align:center"><strong>Plural</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Spatial</strong></td>
+<td style="text-align:center">Value</td>
+<td style="text-align:center">Iterable&lt;Value&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Temporal</strong></td>
+<td style="text-align:center">Promise&lt;Value&gt;</td>
+<td style="text-align:center">Observable&lt;Value&gt;</td>
+</tr>
+</tbody>
+</table>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><h2 id="bacon-js">Bacon.js</h2>
+<h2 id="-img-width-500-src-images-bacon-png-alt-hipster-f-bacon-as-bacon-logo-"><img width='500' src="images/bacon.png" alt="Hipster F. Bacon as Bacon logo"></h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><p><style>
+.quote {
+  display: block;
+  margin: 0 auto;
+}
+.quote p {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: italic;
+}
+</style></p>
+<blockquote class="quote">
+  <p>
+    «Turns your event spaghetti into clean and declarative feng shui bacon»
+  </p>
+</blockquote></section>
+  </div>
+  <div class="slide hidden" id="slide-39">
+    <section class="slide-content"><h1 id="bus">Bus</h1>
+<p>PubSub message queue.
+Can</p>
+<ul>
+<li><code>plug</code> streams</li>
+<li><code>push</code> events manually</li>
+<li>listen <code>onValue</code></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-40">
+    <section class="slide-content"><h1 id="property">Property</h1>
+<p>Superbound variable, snapshot of the stream
+Created using:</p>
+<ul>
+<li>scan() - just like reduce on collection</li>
+<li>toProperty() - just expose as supervariable/bound variable</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-41">
+    <section class="slide-content"><h1 id="some-of-the-api-https-baconjs-github-io-api-html-">Some of the <a href="https://baconjs.github.io/api.html">API</a></h1>
+<ul>
+<li>map</li>
+<li>mergeAll</li>
+<li>flatMap</li>
+<li>flatMapLatest</li>
+<li>skipDuplicates</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-42">
+    <section class="slide-content"><pre><code>Not Only People stream
+========🐼=😍===😍==🐷==&gt;
+CatifyPeople = (⍰) =&gt; ⍰ === 😍 ? 😻 : ⍰
+(Not Only People stream).map(CatifyPeople)
+========🐼=😻===😻==🐷==&gt;</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-43">
+    <section class="slide-content"><h1 id="-demo-time-the-way-it-could-have-gone"><del>Demo time!</del> The way it could have gone</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-44">
+    <section class="slide-content"><pre><code>total = this.state.counters.map(function (obs) {
+  // obs.map(() =&gt; 1);
+  return obs.map(1);
+}).reduce(function (memo, obs) {
+  if (!memo) {
+    return obs;
+  }
+  return memo.merge(obs)
+}).scan(0, function (counter, toAdd) { return counter + toAdd})</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-45">
     <section class="slide-content"><h3 id="to-read-watch-">To Read/Watch:</h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&amp;t=621&amp;v=nYkdrAPrdcw">Flux introduction video</a></li>
 <li><a href="https://medium.com/@dan_abramov/the-case-for-flux-379b7d1982c6">The Case for Flux</a></li>
 <li><a href="https://medium.com/@milankinen/good-bye-flux-welcome-bacon-rx-23c71abfb1a7">Good bye Flux, welcome Bacon/Rx?</a></li>
 <li><a href="http://victorsavkin.com/post/99998937651/building-angular-apps-using-flux-architecture">Building Angular Apps using Flux Architecture</a></li>
+<li><a href="https://www.codementor.io/reactjs/tutorial/flux-reactjs-state-baobab-library">Handling States in Your ReactJS FLUX Application with Baobab</a></li>
+<li><a href="https://github.com/christianalfoni/EmptyBox/blob/master/posts/2015_04_26_Handling-complex-state-with-Baobab.md">Handling complex state with Baobab</a></li>
+<li><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">The introduction to Reactive Programming you&#39;ve been missing</a></li>
+<li><a href="http://www.cheatography.com/proloser/cheat-sheets/bacon-js/">Bacon.js Cheatsheet</a></li>
+<li>...</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-46">
+    <section class="slide-content"><ul>
+<li><a href="https://github.com/milankinen/react-bacon-todomvc">React-Bacon ToDoMVC</a></li>
+<li><a href="http://tonsky.me/talks/2015-codefest/">Функциональное программирование в браузере</a></li>
+<li><a href="https://www.youtube.com/watch?v=mS264h8KGwk">David Nolen - Immutability, interactivity &amp; JavaScript (FutureJS 2014)</a></li>
+<li><a href="https://github.com/roman01la/f-react-kit">f-react-kit</a></li>
+<li><a href="https://github.com/cognitect/transit-js">transit-js</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-47">
     <section class="slide-content"><div class="author">
   <h1 class="name">sudodoki</h1>
     <h3 class="twitter">
