@@ -43,6 +43,11 @@ author:
 --
 
 # [Zapier](https://zapier.com/)
+## 400+ apps
+
+--
+
+# ![](img/zapier_apps.png)
 
 --
 
@@ -78,4 +83,8 @@ author:
 
 # [Cleaver](https://github.com/jdan/cleaver)
 
+--
+
+# Hackathons
+## wink-wink
 
