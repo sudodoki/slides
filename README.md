@@ -8,4 +8,4 @@ Slides by me
 + [react-102](react-102) - May 2015
 + [ligthing talk for KyivJS 2015](kyiv-js-june-15) - June 6, 2015
 + [es6 for rubyists](es6-for-rubyists) - June 2015
-
++ [se 2015](seconf2015) - [September 2015](http://seconf.org.ua/en/)
