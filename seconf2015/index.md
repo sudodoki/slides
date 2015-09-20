@@ -79,12 +79,21 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
+<style>
+  .code pre code {
+    font-size: 160%;
+  }
+</style>
+<div class="code">
+<pre>
 ```
 ∘ Love of details.
 ∘ systematic
 ∘ skills: good with robohorses, computers.
 ∘ other skils: beginner C#
 ```
+</pre>
+</div>
 
 --
 
