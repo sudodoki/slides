@@ -129,25 +129,28 @@ theme: sudodoki/reveal-cleaver-theme
 --
 
 # Выступите на ивенте
-+ KyivJS
-+ KyivPy
-+ Clojurians
-+ …
++ [KyivJS](http://kyivjs.org.ua)
++ [Kyiv.py](http://www.meetup.com/uapycon/)
++ [Kiev Clojure](http://www.meetup.com/Kiev-Clojure-Users/)
++ [RubyMeditation](https://twitter.com/RubyMeditation)
++ […](http://www.meetup.com/find/events/tech/?allMeetups=true&radius=100&userFreeform=Kyiv%2C+Ukraine)
 
 --
 
-# DOU
+# [DOU](http://dou.ua)
 
 --
 
 # Чатики-чаты
++ [mr-mig/ru-it-chats](https://github.com/mr-mig/ru-it-chats)
++ [github.com/dev-ua](https://github.com/dev-ua/)
 
 --
 
 # Полезные линки:
-+ …
-+ …
-+ …
++ [36 – Вадим Макишвили](https://www.youtube.com/watch?v=xPPCzryZK44)
++ [Making Badass Developers - Kathy Sierra](https://www.youtube.com/watch?v=FKTxC9pl-WM)
+
 --
 
 ## Самое главное: будьте няшей!
