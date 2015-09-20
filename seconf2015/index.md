@@ -46,11 +46,19 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
+# Внешний вид
+
+--
+
 # Краткость – сестра таланта
 
 --
 
 # В паблике
+
+--
+
+# [Github pages](https://pages.github.com/)
 
 --
 
@@ -77,6 +85,10 @@ theme: sudodoki/reveal-cleaver-theme
 ∘ skills: good with robohorses, computers.
 ∘ other skils: beginner C#
 ```
+
+--
+
+# Тестовые задания
 
 --
 
