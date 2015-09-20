@@ -2,12 +2,11 @@ title: SE CONF 2015
 author:
   name: sudodoki
   twitter: sudodoki
-output: index.html
-theme: sudodoki/reveal-cleaver-theme
+output: index-light.html
 
 --
 
-## Киев работа без регистрации и смс: повышаем шансы
+### Киев работа без регистрации и смс: повышаем шансы
 ## [http://git.io/vnTDt](http://git.io/vnTDt)
 
 
@@ -17,21 +16,27 @@ theme: sudodoki/reveal-cleaver-theme
     background: transparent!important;
     border: none!important;
   }
+  .plain-image.full-size img {
+    width: 100%;
+  }
+  .plain-image.centered {
+    text-align: center;
+  }
 </style>
 ## Джон, просто Джон
 ## [@sudodoki](http://twitter/sudodoki)
-#### Александр Лапшин
+## Александр Лапшин
 <div class="plain-image">
-![](RR_vector.svg)
+<h1>![](RR_vector.svg)</h1>
 </div>
 --
 
 ## Ваши ожидания
-![](moneygun.gif)
+#![](moneygun.gif)
 
 --
 
-## Ожидания работадателя
+### Ожидания работадателя
 + Свежая кровь
 + Способный
 + Пылкий
@@ -39,11 +44,13 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
-## У работадателя огромный выбор
+# У работадателя огромный выбор
 
 --
 
+<div class="plain-image full-size">
 ![](my_little_resume.jpg)
+</div>
 
 --
 
@@ -72,16 +79,24 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
+<style>
+  .code pre code {
+    font-size: 200%;
+  }
+</style>
+<div class="code">
+<pre>
 ```
 ∘ Love of details.
 ∘ systematic
 ∘ skills: good with robohorses, computers.
 ∘ other skils: beginner C#
 ```
-
+</pre>
+</div>
 --
 
-## Я ничего никогда не делал, но хочу, чтобы вы обратили на меня внимание
+#### Я ничего никогда не делал, но хочу, чтобы вы обратили на меня внимание
 
 --
 
@@ -92,14 +107,14 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
-## Качаться!
+### Качаться!
 + **English**
 + Hardskills
 + Softskills
 
 --
 
-# Интервью
+### Интервью
 + говорим честно
 + спрашиваем про менторство
 + спрашиваем про плюшки
@@ -110,12 +125,12 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
-## Познакомьтесь с соседом
+# Познакомьтесь с соседом
 
 -- 
 
 # Котаны
-<div class="plain-image">
+<div class="plain-image centered">
 ![](kottans.png)
 </div>
 --
@@ -128,7 +143,7 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
-# Выступите на ивенте
+### Выступите на ивенте
 + [KyivJS](http://kyivjs.org.ua)
 + [Kyiv.py](http://www.meetup.com/uapycon/)
 + [Kiev Clojure](http://www.meetup.com/Kiev-Clojure-Users/)
