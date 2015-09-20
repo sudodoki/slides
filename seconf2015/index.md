@@ -10,7 +10,6 @@ theme: sudodoki/reveal-cleaver-theme
 ## Киев работа без регистрации и смс: повышаем шансы
 ## [http://git.io/vnTDt](http://git.io/vnTDt)
 
-
 --
 <style>
   .plain-image img {
@@ -39,7 +38,7 @@ theme: sudodoki/reveal-cleaver-theme
 
 --
 
-## У работадателя огромный выбор
+# У работадателя огромный выбор
 
 --
 
@@ -115,9 +114,8 @@ theme: sudodoki/reveal-cleaver-theme
 -- 
 
 # Котаны
-<div class="plain-image">
 ![](kottans.png)
-</div>
+
 --
 
 # Связи – важны
