@@ -6,10 +6,15 @@ output: index.html
 theme: sudodoki/reveal-cleaver-theme
 
 --
-
+<style>
+  .no-uppercase a {
+    text-transform: none;
+  }
+</style>
 ## Киев работа без регистрации и смс: повышаем шансы
-## [http://git.io/vnTDt](http://git.io/vnTDt)
-
+<div class="no-uppercase">
+<h2>[http://git.io/vnTDt](http://git.io/vnTDt)</h2>
+</div>
 --
 <style>
   .plain-image img {
@@ -178,5 +183,7 @@ theme: sudodoki/reveal-cleaver-theme
 --
 
 # Вопросы?
-## [http://git.io/vnTDt](http://git.io/vnTDt)
+<div class="no-uppercase">
+<h2>[http://git.io/vnTDt](http://git.io/vnTDt)</h2>
+</div>
 ## [@sudodoki](http://twitter/sudodoki) 
