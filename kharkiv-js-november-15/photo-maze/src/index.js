@@ -27,7 +27,6 @@ function read_localfile() {
   var reader  = new FileReader();
 
   reader.onloadend = function () {
-    preview.src = reader.result;
     drawImage(reader.result);
   };
 
