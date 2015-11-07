@@ -173,7 +173,7 @@ theme: sudodoki/reveal-cleaver-theme
 # ~8hrs
 <ol>
   <li class="fragment">Canvas & setting width/height</li>
-  <li class="fragment">Setting width/height for canvas</li>
+  <li class="fragment">CSS & width/height</li>
 </ol>
 ```
 let width = img.naturalWidth;
