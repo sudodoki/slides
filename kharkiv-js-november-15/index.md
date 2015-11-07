@@ -10,7 +10,7 @@ theme: sudodoki/reveal-cleaver-theme
 ### Maze: because I can (not) solve one
 ![](images/3d-maze-o.gif)
 <div class="no-uppercase">
-<h2>[http://git.io/vnTDt](http://git.io/vnTDt)</h2>
+<h2>[http://git.io/v8cHt](http://git.io/v8cHt)</h2>
 <h2>[@sudodoki](http://twitter.com/sudodoki)</h2>
 </div>
 --
