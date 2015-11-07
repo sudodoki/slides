@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maze</title>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    #maze-input {
+      width: 530px;
+      height: 400px;
+    }
+    #result {
+      width: 200px;
+      height: 200px; 
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Hi</h1>
+  <style type="text/css">
+    .container {
+      overflow: hidden;
+    }
+    .container .half {
+      width: 50%;    
+      display: block;
+      float: left;
+    }
+  </style>
+  <div class="container">
+    <button id="fake-data">Use fake</button>
+    <input id="threshold" type="range" min="0" max="255"></input>
+    <hr>
+    <br>
+    <div class="half">
+      <button id="take-photo">Photo!</button>
+      <div id="maze-input"></div>
+    </div>
+    <div class="half">
+      <input type="file" id="upload-file"><br>
+    </div>
+  </div> 
+  <canvas id="maze-canvas"></canvas>
+  <script src='bundled.js'></script>
+</body>
+</html>

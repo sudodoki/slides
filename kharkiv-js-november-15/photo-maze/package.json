@@ -1,0 +1,24 @@
+{
+  "name": "photo-maze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/index.js -t babelify -o bundled.js",
+    "dev": "watchify src/index.js -t babelify -o bundled.js",
+    "start": "python -m SimpleHTTPServer 8888"
+  },
+  "keywords": [],
+  "author": "sudodoki <smd.deluzion@gmail.com> (sudodoki.name)",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browserify": "^11.2.0",
+    "watchify": "^3.5.0"
+  },
+  "dependencies": {
+    "easystarjs": "^0.2.3",
+    "jquery": "^2.1.4",
+    "webcamjs": "^1.0.4"
+  }
+}
