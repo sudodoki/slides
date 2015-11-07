@@ -197,3 +197,6 @@ canvas.height = height;
 ![](images/gardner.jpg)
 --
 # Not sure, but Q&A?
+<div class="no-uppercase">
+  <h2>[http://git.io/v8cHt](http://git.io/v8cHt)</h2>
+</div>
