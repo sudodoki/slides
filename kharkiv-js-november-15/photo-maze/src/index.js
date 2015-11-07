@@ -116,7 +116,6 @@ var threshold = 100;
 document.getElementById('threshold').value = threshold;
 document.getElementById('threshold').addEventListener('change', function (e) {
   threshold = this.value;
-  console.log(threshold);
 });
 function isWalkable({r, g, b, a}) {
  return [r, g, b].every((val) => val < threshold);
@@ -143,7 +142,6 @@ function solve({start, finish}, frame) {
     frame.data[i * 4 + 3] = 255;
   }
   drawData(frame);
-  console.log(resultMatrix)
   var solver = new Easystar();
   solver.setGrid(resultMatrix);
   solver.setAcceptableTiles([0]);
