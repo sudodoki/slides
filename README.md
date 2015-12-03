@@ -9,3 +9,4 @@ Slides by me
 + [ligthing talk for KyivJS 2015](kyiv-js-june-15) - June 6, 2015
 + [es6 for rubyists](es6-for-rubyists) - June 2015
 + [se 2015](seconf2015) - [September 2015](http://seconf.org.ua/en/)
++ [Maze: because I can (not) solve one](kharkiv-js-november-15) - [November 2015](http://kharkivjs.org/)
