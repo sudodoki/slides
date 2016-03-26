@@ -315,7 +315,7 @@ more than one type of module
 --
 
 # Bundlers Pros
-+ ### Single of few entry points
++ ### Single or few entry points
 + ### Best solution for spped
 
 --
