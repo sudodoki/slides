@@ -10,3 +10,4 @@ Slides by me
 + [es6 for rubyists](es6-for-rubyists) - June 2015
 + [se 2015](seconf2015) - [September 2015](http://seconf.org.ua/en/)
 + [Maze: because I can (not) solve one](kharkiv-js-november-15) - [November 2015](http://kharkivjs.org/)
++ [Power of modules: tie that stuff together](kpi-js-march-16) - [March 2016](https://www.facebook.com/events/1034708533237733/permalink/1043784235663496/)

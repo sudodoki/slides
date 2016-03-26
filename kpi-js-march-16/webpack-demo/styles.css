@@ -1,0 +1,8 @@
+body {
+  background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  min-height: 250px;
+  background: url('../images/webpack-gun.png');
+}
