@@ -12,3 +12,4 @@ Slides by me
 + [Maze: because I can (not) solve one](kharkiv-js-november-15) - [November 2015](http://kharkivjs.org/). [Video](https://www.youtube.com/watch?v=jhuAJoBg7js)
 + [Power of modules: tie that stuff together](kpi-js-march-16) - [March 2016](https://www.facebook.com/events/1034708533237733/permalink/1043784235663496/)
 + [Lighting on how to do lightings](how-to-slides) - KPIJS March 2016
++ [Programming as analogy, pt.2](rubymeditation-april-16) - Rubymeditation #8, April 2016
