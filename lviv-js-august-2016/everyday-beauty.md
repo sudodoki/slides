@@ -6,7 +6,7 @@ author:
   email: smd.deluzion@gmail.com
   github: sudodoki
   twitter: sudodoki
-theme: reveal-cleaver-theme
+theme: sudodoki/reveal-cleaver-theme
 output: index.html
 
 --
@@ -30,8 +30,9 @@ h1.name { white-space: pre }
 </style>
 
 ### Typical web-apps.
-![](images/typical-web.png)
 [https://git.io/v6psc](https://git.io/v6psc)
+![](images/typical-web.png)
+
 --
 
 ## about:~~blank~~ me
