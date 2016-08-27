@@ -31,7 +31,7 @@ h1.name { white-space: pre }
 
 ### Typical web-apps.
 ![](images/typical-web.png)
-
+[https://git.io/v6psc](https://git.io/v6psc)
 --
 
 ## about:~~blank~~ me
