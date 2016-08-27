@@ -1,0 +1,14 @@
+graph BT
+    subgraph feature
+    b1(commit B1)
+    b2(commit B2)
+    b3(commit B3)
+    b1-->b2
+    b2-->b3
+    end
+    subgraph master
+    a1(commit A1)
+    a2(commit A2)
+    a1-->a2
+    end
+    a2-->b1
