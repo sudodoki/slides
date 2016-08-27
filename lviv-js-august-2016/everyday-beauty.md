@@ -207,7 +207,7 @@ h1.name { white-space: pre }
 
 --
 
-## A bit about how git stores it's data
+## A bit about how git stores its data
 ### Should make it less abstract
 
 --
