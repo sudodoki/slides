@@ -13,3 +13,4 @@ Slides by me
 + [Power of modules: tie that stuff together](kpi-js-march-16) - [March 2016](https://www.facebook.com/events/1034708533237733/permalink/1043784235663496/). [Video](https://www.youtube.com/watch?v=4MErkKAZIIw)
 + [Lighting on how to do lightings](how-to-slides) - KPIJS March 2016. [Video](https://www.youtube.com/watch?v=VQylfyW3Qac)
 + [Programming as analogy, pt.2](rubymeditation-april-16) - Rubymeditation #8, April 2016
++ [Beauty of everyday tools](lviv-js-august-2016) – [August 2016 @ LvivJS](http://www.lvivjs.org.ua/)
