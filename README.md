@@ -14,3 +14,4 @@ Slides by me
 + [Lighting on how to do lightings](how-to-slides) - KPIJS March 2016. [Video](https://www.youtube.com/watch?v=VQylfyW3Qac)
 + [Programming as analogy, pt.2](rubymeditation-april-16) - Rubymeditation #8, April 2016
 + [Beauty of everyday tools](lviv-js-august-2016) – [August 2016 @ LvivJS](http://www.lvivjs.org.ua/)
++ [React: lessons learned](react-lessong-learned) – December 2016. Introish + experience.
