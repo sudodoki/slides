@@ -15,3 +15,4 @@ Slides by me
 + [Programming as analogy, pt.2](rubymeditation-april-16) - Rubymeditation #8, April 2016
 + [Beauty of everyday tools](lviv-js-august-2016) – [August 2016 @ LvivJS](http://www.lvivjs.org.ua/)
 + [React: lessons learned](react-lessons-learned) – December 2016. Introish + experience.
++ [React: 101](react-101) – Jan 2017. Intro.
