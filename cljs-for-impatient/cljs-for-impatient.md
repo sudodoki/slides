@@ -308,7 +308,7 @@ React.createElement(
 
 ## Дайте мне точку входа и я весь переколбашу проект`*`
 `*` – предполагаем, что у вас Leiningen
-
+<img src="images/bridge.gif" style="width: 400px">
 --
 project.clj
 <pre><code style="font-size:28px;line-height: 32px">(defproject color-clock "0.1.0-SNAPSHOT"
