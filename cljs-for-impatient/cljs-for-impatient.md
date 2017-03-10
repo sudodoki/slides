@@ -50,7 +50,7 @@ output: index.html
 
 --
 
-### Команда энтерпрайза
+### Команда "Enterprise"
 ![](images/team.jpg)
 <div style="margin: 15px 0px;text-align: left; ">
 <span class="fragment" style="vertical-align:middle;text-align:center; display: inline-block; width:25%">Your Generic language</span>
@@ -66,7 +66,7 @@ output: index.html
 
 # ClojureScript
 + "Младший брат" Clojure
-+ Clojure использует JVM / CLR / JS как хоста
++ Clojure использует JVM / CLR / JS как хост
 + Минус вещи для работы с многопоточностью
 
 --
