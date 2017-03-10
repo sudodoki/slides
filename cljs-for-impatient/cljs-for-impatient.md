@@ -443,8 +443,24 @@ using reagent/atom to get automagical rerendering
 
 --
 
-# <img src="images/cljs.svg" style="vertical-align: bottom;width: 100px"> ➕ 👀 = 💡
-# <img src="images/cljs.svg" style="vertical-align: bottom;width: 100px"> ➕ ⌨️ = 🤓
+
+<img src="images/cljs.svg" style="border:none;vertical-align: bottom; width: 80px">
+<img src="images/plus.svg" style="border:none;vertical-align: bottom; width: 80px">
+<img src="images/eyes.svg" style="border:none;vertical-align: bottom; width: 80px">
+<img src="images/soon.svg" style="border:none;vertical-align: bottom; width: 80px">
+<img src="images/bulb.svg" style="border:none;vertical-align: bottom; width: 80px">
+<br/>
+<br/>
+<img src="images/cljs.svg" style="vertical-align: bottom;width: 80px;border: none;">
+<img src="images/plus.svg" style="vertical-align: bottom;width: 80px;border: none;">
+<img src="images/keyboard.svg" style="vertical-align: bottom;width: 80px;border: none;">
+<img src="images/soon.svg" style="vertical-align: bottom;width: 80px;border: none;">
+<img src="images/nerd.svg" style="vertical-align: bottom;width: 80px;border: none;">
+
+
+
+
+
 
 
 --
