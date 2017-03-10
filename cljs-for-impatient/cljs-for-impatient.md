@@ -368,7 +368,6 @@ project.clj
              <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span>
                      (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
         [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @current-time)]])))
-<span class="hljs-comment">;; Initialize app</span>
 (<span class="hljs-name">r/render</span> [clock-page]
   (<span class="hljs-name">.getElementById</span> js/document <span class="hljs-string">"app"</span>))</code></pre>
 
@@ -430,7 +429,6 @@ using reagent/atom to get automagical rerendering
              <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span>
                      (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
         [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @current-time)]])))
-<span class="hljs-comment">;; Initialize app</span>
 (<span class="hljs-name">r/render</span> [clock-page]
   (<span class="hljs-name">.getElementById</span> js/document <span class="hljs-string">"app"</span>))</code></pre>
 
