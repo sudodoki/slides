@@ -667,9 +667,11 @@ body {
     <div class="slides">
         <section>
     <style>
-//.reveal code {
-//  font-family: "Joystix";
-//}
+.reveal code {
+  // font-family: "Joystix";
+  font-size: 45px;
+  line-height: 50px;
+}
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   font-family: "Upheaval Pro";
@@ -718,7 +720,7 @@ body {
 <span class="fragment" style="text-align:center; display: inline-block; width:12%">JS</span>
 <span class="fragment" style="text-align:center; display: inline-block; width:12%;margin-left: -125px;">––</span>
 </div>
-<span class="fragment">В данной аналогии JS = двигатель энтерпрайза</span></p>
+<span class="fragment">В данной аналогии JS = двигатель корабля</span></p>
 
   </section>
   <section>
@@ -738,14 +740,14 @@ body {
   <section>
     <h3 id="-">Также в номере</h3>
 <ul>
-<li>Воспитывает функциональное мышление</li>
+<li>Воспитание функционального мышления</li>
 <li>Фронтенд на cljs = пуля в борьбе с JS снобами</li>
 <li>Иммутабельность по дефолту</li>
 <li>Практичность и разумные компромиссы</li>
-<li>Нормально встраиваемый</li>
+<li>Встраиваемость</li>
 <li>Комьюнити</li>
 <li>Эксперименты</li>
-<li>Ну и кладезь для идей</li>
+<li>Кладезь для идей</li>
 </ul>
 
   </section>
@@ -764,14 +766,21 @@ body {
   <section>
     <pre><code class="lang-js"><span class="hljs-comment">/*
 &lt;Str&gt;
-  &lt;span&gt;hello&lt;/span&gt;
-  &lt;span&gt;world&lt;/span&gt;
+  &lt;p&gt;hello&lt;/p&gt;
+  &lt;p&gt;world&lt;/p&gt;
 &lt;/Str&gt;
-*/</span>
-React.createElement(
+*/</span></code></pre>
+
+  </section>
+  <section>
+    <pre><code class="lang-js">React.createElement(
   Str, <span class="hljs-literal">null</span>,
-    React.createElement(<span class="hljs-string">'span'</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'hello'</span>),
-    React.createElement(<span class="hljs-string">'span'</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'world'</span>))</code></pre>
+    React.createElement(
+      <span class="hljs-string">'p'</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'hello'</span>
+    ),
+    React.createElement(
+      <span class="hljs-string">'p'</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'world'</span>
+    ))</code></pre>
 
   </section>
   <section>
@@ -792,11 +801,13 @@ React.createElement(
 
   </section>
   <section>
-    <pre><code class="lang-clj">(<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> #(<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">.-PI</span> js/Math) (<span class="hljs-name">square</span> %))
+    <pre><code class="lang-clj">(<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> #(<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">.-PI</span> js/Math)
+         (<span class="hljs-name">square</span> %))
       [<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>])
 
 (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">fn</span></span> [radius]
-        (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">.-PI</span> js/Math) (<span class="hljs-name">square</span> radius)))
+        (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">.-PI</span> js/Math)
+           (<span class="hljs-name">square</span> radius)))
      [<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>])</code></pre>
 
   </section>
@@ -854,17 +865,27 @@ React.createElement(
 
   </section>
   <section>
-    <pre><code class="lang-clj"><span class="hljs-comment">; Ignoring OdessaJS, LvivJS, TernopilJS, ChernivtsiJS, …</span>
-(<span class="hljs-name"><span class="hljs-builtin-name">def</span></span> cityjs {<span class="hljs-symbol">:kyiv</span> [<span class="hljs-string">"KyivJS"</span>] <span class="hljs-symbol">:kharkiv</span> [<span class="hljs-string">"KharkivJS"</span>]})
+    <pre><code class="lang-clj"><span class="hljs-comment">; Ignoring other *JS</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">def</span></span> cityjs
+  {<span class="hljs-symbol">:kharkiv</span> [<span class="hljs-string">"KharkivJS"</span>]})</code></pre>
 
-(<span class="hljs-name"><span class="hljs-builtin-name">assoc</span></span> cityjs <span class="hljs-symbol">:kharkiv</span> (<span class="hljs-name"><span class="hljs-builtin-name">conj</span></span> (<span class="hljs-symbol">:kharkiv</span> cityjs) <span class="hljs-string">"KhJS"</span>))
-<span class="hljs-comment">; =&gt; {:kharkiv ["KharkivJS" "KhJS"], :kyiv ["KyivJS"]}</span>
+  </section>
+  <section>
+    <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">assoc</span></span> cityjs
+  <span class="hljs-symbol">:kharkiv</span>
+  (<span class="hljs-name"><span class="hljs-builtin-name">conj</span></span>
+    (<span class="hljs-symbol">:kharkiv</span> cityjs)
+    <span class="hljs-string">"KhJS"</span>))
+<span class="hljs-comment">; =&gt; {:kharkiv</span>
+<span class="hljs-comment">;     ["KharkivJS" "KhJS"]}</span></code></pre>
 
-(<span class="hljs-name"><span class="hljs-builtin-name">update-in</span></span> cityjs [<span class="hljs-symbol">:kharkiv</span>] #(<span class="hljs-name"><span class="hljs-builtin-name">conj</span></span> % <span class="hljs-string">"KhJS"</span>))
-<span class="hljs-comment">; =&gt; {:kharkiv ["KharkivJS" "KhJS"], :kyiv ["KyivJS"]}</span>
-
-(<span class="hljs-name">println</span> cityjs)
-<span class="hljs-comment">; =&gt; {:kharkiv [KharkivJS], :kyiv [KyivJS]}</span></code></pre>
+  </section>
+  <section>
+    <pre><code class="lang-clj">(<span class="hljs-name"><span class="hljs-builtin-name">update-in</span></span> cityjs
+  [<span class="hljs-symbol">:kharkiv</span>]
+  #(<span class="hljs-name"><span class="hljs-builtin-name">conj</span></span> % <span class="hljs-string">"KhJS"</span>))
+<span class="hljs-comment">; =&gt; {:kharkiv </span>
+<span class="hljs-comment">;     ["KharkivJS" "KhJS"]}</span></code></pre>
 
   </section>
   <section>
@@ -887,34 +908,35 @@ React.createElement(
   </section>
   <section>
     <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">defn</span></span> greet
-    ([salutation]
-        (<span class="hljs-name">greet</span> salutation <span class="hljs-string">"world"</span>))
-    ([salutation who]
-        (<span class="hljs-name">println</span> salutation who)))
-<span class="hljs-comment">; cljs.user=&gt; (greet "hey" "there")</span>
-<span class="hljs-comment">; hey there</span>
-<span class="hljs-comment">; nil</span>
+    ([salute]
+        (<span class="hljs-name">greet</span> salute <span class="hljs-string">"world"</span>))
+    ([salute who]
+        (<span class="hljs-name">println</span> salute who)))
 <span class="hljs-comment">; cljs.user=&gt; (greet "hey")</span>
 <span class="hljs-comment">; hey world</span>
 <span class="hljs-comment">; nil</span></code></pre>
 
   </section>
   <section>
-    <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">defmulti</span></span> what-to-do-with-project <span class="hljs-symbol">:framework</span>)
-<span class="hljs-comment">; same as (defmulti what-to-do #(% :framework))</span>
+    <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">defmulti</span></span> refactor <span class="hljs-symbol">:framework</span>)
+<span class="hljs-comment">; same as</span>
+<span class="hljs-comment">; (defmulti refactor</span>
+<span class="hljs-comment">;           #(% :framework))</span></code></pre>
 
-(<span class="hljs-name"><span class="hljs-builtin-name">defmethod</span></span> what-to-do-with-project <span class="hljs-symbol">:angular</span>
+  </section>
+  <section>
+    <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">defmethod</span></span> refactor <span class="hljs-symbol">:angular</span>
   [{name <span class="hljs-symbol">:name</span>}]
-  (<span class="hljs-name">println</span> <span class="hljs-string">"Throw"</span> name <span class="hljs-string">"away, let's rewrite everything in react"</span>))  
-(<span class="hljs-name"><span class="hljs-builtin-name">defmethod</span></span> what-to-do-with-project <span class="hljs-symbol">:react</span>
-  [{name <span class="hljs-symbol">:name</span>}]
-  (<span class="hljs-name">println</span> <span class="hljs-string">"Fork CRA so"</span> name <span class="hljs-string">"can be PWA with high ROI"</span>))  
-(<span class="hljs-name"><span class="hljs-builtin-name">defmethod</span></span> what-to-do-with-project <span class="hljs-symbol">:reagent</span>
-  [{name <span class="hljs-symbol">:name</span>}]
-  (<span class="hljs-name">println</span> <span class="hljs-string">"Ship"</span> name <span class="hljs-string">"and learn cljs"</span>))  
+  (<span class="hljs-name">println</span> <span class="hljs-string">"Rewrite"</span>
+           name
+           <span class="hljs-string">"in react"</span>))</code></pre>
 
-(<span class="hljs-name">what-to-do-with-project</span> {<span class="hljs-symbol">:framework</span> <span class="hljs-symbol">:angular</span> <span class="hljs-symbol">:name</span> <span class="hljs-string">"My TODO App"</span>})
-<span class="hljs-comment">; Throw My TODO App away, let's rewrite everything in react</span>
+  </section>
+  <section>
+    <pre><code class="lang-clj">(<span class="hljs-name">refactor</span> {
+  <span class="hljs-symbol">:framework</span> <span class="hljs-symbol">:angular</span>
+  <span class="hljs-symbol">:name</span> <span class="hljs-string">"My TODO App"</span>})
+<span class="hljs-comment">; Rewrite My TODO App in react</span>
 <span class="hljs-comment">; nil</span></code></pre>
 
   </section>
@@ -941,18 +963,19 @@ React.createElement(
   </section>
   <section>
     <p>project.clj</p>
-<pre><code class="lang-clojure">(<span class="hljs-name">defproject</span> color-clock <span class="hljs-string">"0.1.0-SNAPSHOT"</span>
-  <span class="hljs-symbol">:description</span> <span class="hljs-string">"FIXME: write this!"</span>
-  <span class="hljs-symbol">:url</span> <span class="hljs-string">"http://example.com/FIXME"</span>
-  <span class="hljs-symbol">:dependencies</span> [[org.clojure/clojure <span class="hljs-string">"1.8.0"</span>]
-                 [org.clojure/clojurescript <span class="hljs-string">"1.9.456"</span>]
-                 [reagent <span class="hljs-string">"0.6.0"</span>]]
-  <span class="hljs-symbol">:jvm-opts</span> ^<span class="hljs-symbol">:replace</span> [<span class="hljs-string">"-Xmx1g"</span> <span class="hljs-string">"-server"</span>]
-  <span class="hljs-symbol">:plugins</span> [[lein-npm <span class="hljs-string">"0.6.1"</span>]]
-  <span class="hljs-symbol">:npm</span> {<span class="hljs-symbol">:dependencies</span> [[source-map-support <span class="hljs-string">"0.4.0"</span>]]}
-  <span class="hljs-symbol">:source-paths</span> [<span class="hljs-string">"src"</span> <span class="hljs-string">"target/classes"</span>]
-  <span class="hljs-symbol">:clean-targets</span> [<span class="hljs-string">"out"</span> <span class="hljs-string">"release"</span>]
-  <span class="hljs-symbol">:target-path</span> <span class="hljs-string">"target"</span>)</code></pre>
+<p><pre><code style="font-size:28px;line-height: 32px">(defproject color-clock &quot;0.1.0-SNAPSHOT&quot;
+  :description &quot;FIXME: write this!&quot;
+  :dependencies [
+    [org.clojure/clojure &quot;1.8.0&quot;]
+    [org.clojure/clojurescript &quot;1.9.456&quot;]
+    [reagent &quot;0.6.0&quot;]]
+  :jvm-opts ^:replace [&quot;-Xmx1g&quot; &quot;-server&quot;]
+  :plugins [[lein-npm &quot;0.6.1&quot;]]
+  :npm {:dependencies [[source-map-support &quot;0.4.0&quot;]]}
+  :source-paths [&quot;src&quot; &quot;target/classes&quot;]
+  :clean-targets [&quot;out&quot; &quot;release&quot;]
+  :target-path &quot;target&quot;)
+</pre></code></p>
 
   </section>
   <section>
@@ -983,18 +1006,35 @@ React.createElement(
 
   </section>
   <section>
-    <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">defn</span></span> clock-page []
-  (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [current-time (<span class="hljs-name">r/atom</span> (<span class="hljs-name">get-current-time</span>))]
-    (<span class="hljs-name"><span class="hljs-builtin-name">add-watch</span></span> current-time <span class="hljs-symbol">:seconds</span> println)
-    (<span class="hljs-name"><span class="hljs-builtin-name">fn</span></span> []
-      (<span class="hljs-name">js/setTimeout</span> #(<span class="hljs-name"><span class="hljs-builtin-name">reset!</span></span> current-time (<span class="hljs-name">get-current-time</span>)) <span class="hljs-number">1000</span>)
-      [<span class="hljs-symbol">:div</span> {<span class="hljs-symbol">:class</span> <span class="hljs-string">"holder"</span> 
-             <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span> (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
-        [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @current-time)]])))
-<span class="hljs-comment">;; -------------------------</span>
-<span class="hljs-comment">;; Initialize app</span>
-(<span class="hljs-name">r/render</span> [clock-page] (<span class="hljs-name">.getElementById</span> js/document <span class="hljs-string">"app"</span>))</code></pre>
+    <!--```clojure
+(defn clock-page []
+  (let [cur-time (r/atom (get-current-time))]
+    (add-watch cur-time :seconds println)
+    (fn []
+      (js/setTimeout
+        #(reset! сur-time (get-current-time)) 1000)
+      [:div {:class "holder" 
+             :style {"backgroundColor"
+                     (time-to-rgb @current-time)}} 
+        [:h1 (interpose ":" @current-time)]])))
+;; Initialize app
+(r/render [clock-page]
+  (.getElementById js/document "app"))
+```-->
 
+<pre><code class="lang-clojure" style="font-size: 28px; line-height: 32px;">(<span class="hljs-name"><span class="hljs-builtin-name">defn</span></span> clock-page []
+  (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [cur-time (<span class="hljs-name">r/atom</span> (<span class="hljs-name">get-current-time</span>))]
+    (<span class="hljs-name"><span class="hljs-builtin-name">add-watch</span></span> cur-time <span class="hljs-symbol">:seconds</span> println)
+    (<span class="hljs-name"><span class="hljs-builtin-name">fn</span></span> []
+      (<span class="hljs-name">js/setTimeout</span>
+        #(<span class="hljs-name"><span class="hljs-builtin-name">reset!</span></span> сur-time (<span class="hljs-name">get-current-time</span>)) <span class="hljs-number">1000</span>)
+      [<span class="hljs-symbol">:div</span> {<span class="hljs-symbol">:class</span> <span class="hljs-string">"holder"</span> 
+             <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span>
+                     (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
+        [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @current-time)]])))
+<span class="hljs-comment">;; Initialize app</span>
+(<span class="hljs-name">r/render</span> [clock-page]
+  (<span class="hljs-name">.getElementById</span> js/document <span class="hljs-string">"app"</span>))</code></pre>
   </section>
   <section>
     <h2 id="let-let">let он и в Африке let</h2>
@@ -1004,55 +1044,50 @@ React.createElement(
   </section>
   <section>
     <h1 id="atom">Atom</h1>
-<pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">def</span></span> my-answer (<span class="hljs-name"><span class="hljs-builtin-name">atom</span></span> <span class="hljs-number">42</span>))
-
-(<span class="hljs-name">println</span> (<span class="hljs-name"><span class="hljs-builtin-name">deref</span></span> my-answer)) <span class="hljs-comment">; =&gt; 42</span>
-(<span class="hljs-name">println</span> @my-answer) <span class="hljs-comment">; =&gt; 42</span>
-
-(<span class="hljs-name"><span class="hljs-builtin-name">swap!</span></span> my-answer inc) <span class="hljs-comment">; =&gt; 43</span>
-(<span class="hljs-name"><span class="hljs-builtin-name">swap!</span></span> my-answer #(<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> <span class="hljs-number">2</span> %)) <span class="hljs-comment">; =&gt; 86</span>
-
-(<span class="hljs-name"><span class="hljs-builtin-name">compare-and-set!</span></span> my-answer <span class="hljs-number">42</span> <span class="hljs-number">13</span>) <span class="hljs-comment">; =&gt; false</span>
-
-(<span class="hljs-name"><span class="hljs-builtin-name">reset!</span></span> my-answer <span class="hljs-number">42</span>) <span class="hljs-comment">; =&gt; 42</span></code></pre>
+<pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">def</span></span> answer (<span class="hljs-name"><span class="hljs-builtin-name">atom</span></span> <span class="hljs-number">42</span>))
+(<span class="hljs-name">println</span> (<span class="hljs-name"><span class="hljs-builtin-name">deref</span></span> answer))
+(<span class="hljs-name">println</span> @answer) <span class="hljs-comment">; =&gt; 42</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">swap!</span></span> answer #(<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> <span class="hljs-number">2</span> %)) <span class="hljs-comment">; =&gt; 84</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">compare-and-set!</span></span> answer <span class="hljs-number">42</span> <span class="hljs-number">13</span>)
+<span class="hljs-comment">; =&gt; false</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">reset!</span></span> answer <span class="hljs-number">42</span>) <span class="hljs-comment">; =&gt; 42</span></code></pre>
 <p>using reagent/atom to get automagical rerendering</p>
 
   </section>
   <section>
     <h1 id="markup">Markup</h1>
-<pre><code class="lang-clojure">[<span class="hljs-symbol">:div</span> {<span class="hljs-symbol">:class</span> <span class="hljs-string">"holder"</span> 
-       <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span> (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
-  [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @current-time)]]</code></pre>
+<pre><code class="lang-clojure">[<span class="hljs-symbol">:div</span>
+  {<span class="hljs-symbol">:class</span> <span class="hljs-string">"holder"</span> 
+   <span class="hljs-symbol">:style</span> {
+     <span class="hljs-string">"backgroundColor"</span>
+      (<span class="hljs-name">time-&gt;rgb</span> @cur-time)}} 
+  [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @cur-time)
+]]</code></pre>
 <p>Хотите просто хтмл – <a href="https://github.com/cgrand/enlive">enlive</a></p>
 
   </section>
   <section>
     <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">ns</span></span> color-clock.core
-  (<span class="hljs-symbol">:require</span> [reagent.core <span class="hljs-symbol">:as</span> r]
-            [goog.string <span class="hljs-symbol">:as</span> str]))
-<span class="hljs-comment">; (:require-macros [cljs.core.async.macros :refer [go]])</span>
-<span class="hljs-comment">; (:require [cljs.core.async :as async</span>
-<span class="hljs-comment">;             :refer [&gt;! &lt;! put! chan alts!]]</span>
-<span class="hljs-comment">;            [goog.events :as events]</span>
-<span class="hljs-comment">;            [goog.dom.classes :as classes])</span>
-<span class="hljs-comment">; (:import [goog.events EventType])</span></code></pre>
-<p>Имя неймспейса ↔ путем к файлу
-Поэтому, в примере выше src/color_clock/core.cljs</p>
+  (<span class="hljs-symbol">:require</span>
+    [reagent.core <span class="hljs-symbol">:as</span> r]
+    [goog.string <span class="hljs-symbol">:as</span> str]))</code></pre>
+<p>Имя неймспейса ↔ путь к файлу<br>Поэтому, в примере выше src/color_clock/core.cljs</p>
 
   </section>
   <section>
-    <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">defn</span></span> clock-page []
-  (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [current-time (<span class="hljs-name">r/atom</span> (<span class="hljs-name">get-current-time</span>))]
-    (<span class="hljs-name"><span class="hljs-builtin-name">add-watch</span></span> current-time <span class="hljs-symbol">:seconds</span> println)
+    <pre><code class="lang-clojure" style="font-size: 28px; line-height: 32px;">(<span class="hljs-name"><span class="hljs-builtin-name">defn</span></span> clock-page []
+  (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [cur-time (<span class="hljs-name">r/atom</span> (<span class="hljs-name">get-current-time</span>))]
+    (<span class="hljs-name"><span class="hljs-builtin-name">add-watch</span></span> cur-time <span class="hljs-symbol">:seconds</span> println)
     (<span class="hljs-name"><span class="hljs-builtin-name">fn</span></span> []
-      (<span class="hljs-name">js/setTimeout</span> #(<span class="hljs-name"><span class="hljs-builtin-name">reset!</span></span> current-time (<span class="hljs-name">get-current-time</span>)) <span class="hljs-number">1000</span>)
+      (<span class="hljs-name">js/setTimeout</span>
+        #(<span class="hljs-name"><span class="hljs-builtin-name">reset!</span></span> сur-time (<span class="hljs-name">get-current-time</span>)) <span class="hljs-number">1000</span>)
       [<span class="hljs-symbol">:div</span> {<span class="hljs-symbol">:class</span> <span class="hljs-string">"holder"</span> 
-              <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span> (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
+             <span class="hljs-symbol">:style</span> {<span class="hljs-string">"backgroundColor"</span>
+                     (<span class="hljs-name">time-to-rgb</span> @current-time)}} 
         [<span class="hljs-symbol">:h1</span> (<span class="hljs-name">interpose</span> <span class="hljs-string">":"</span> @current-time)]])))
-<span class="hljs-comment">;; -------------------------</span>
 <span class="hljs-comment">;; Initialize app</span>
-(<span class="hljs-name">r/render</span> [clock-page] (<span class="hljs-name">.getElementById</span> js/document <span class="hljs-string">"app"</span>))</code></pre>
-
+(<span class="hljs-name">r/render</span> [clock-page]
+  (<span class="hljs-name">.getElementById</span> js/document <span class="hljs-string">"app"</span>))</code></pre>
   </section>
   <section>
     <h2 id="-">За кадром</h2>
