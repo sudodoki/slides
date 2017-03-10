@@ -9,6 +9,11 @@ output: index.html
 --
 
 <style>
+@font-face {
+  font-family: "WebUpheavalPro";
+  src: url("fonts/Upheaval/UpheavalPro.otf") format("opentype"),
+       url("fonts/Upheaval/UpheavalPro.ttf") format("truetype");
+}
 .reveal code {
   // font-family: "Joystix";
   font-size: 45px;
@@ -16,7 +21,7 @@ output: index.html
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-  font-family: "Upheaval Pro";
+  font-family: "Upheaval Pro", "WebUpheavalPro", "Source Sans Pro", Helvetica, sans-serif;;
 }
 
 .reveal .roll {
