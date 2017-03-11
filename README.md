@@ -16,3 +16,4 @@ Slides by me
 + [Beauty of everyday tools](lviv-js-august-2016) – [August 2016 @ LvivJS](http://www.lvivjs.org.ua/)
 + [React: lessons learned](react-lessons-learned) – December 2016. Introish + experience.
 + [React: 101](react-101) – Jan 2017. Intro.
++ [cljs for impatient](cljs-for-impatient) – Mar 2017.
