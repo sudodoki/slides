@@ -1,0 +1,2 @@
+grammar s;
+num : '11' | '1001' | num '0' | num num;

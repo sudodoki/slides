@@ -1,0 +1,17 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pegjs": "pegjs"
+  },
+  "keywords": [],
+  "author": "sudodoki <smd.deluzion@gmail.com> (sudodoki.name)",
+  "license": "MIT",
+  "dependencies": {
+    "antlr4": "^4.7.0",
+    "pegjs": "^0.10.0"
+  }
+}

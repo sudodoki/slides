@@ -1,0 +1,29 @@
+digraph G {
+    1 [label="Term"];
+    4 [label="Digit"];
+    7 [label="2"];
+    8 [label="Sign"];
+    12 [label="+"];
+    2 [label="Term"];
+    5 [label="Digit"];
+    9 [label="3"];
+    10 [label="Sign"];
+    13 [label="-"];
+    3 [label="Term"];
+    6 [label="Digit"];
+    11 [label="4"];
+    
+    1 -> 4;
+    4 -> 7;
+    1 -> 8;
+    8 -> 12;
+    1 -> 2;
+    2 -> 5;
+    5 -> 9;
+    2 -> 10;
+    10 -> 13;
+    2 -> 3;
+    3 -> 6;
+    6 -> 11;
+
+}

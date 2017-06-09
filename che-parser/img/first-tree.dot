@@ -1,0 +1,8 @@
+digraph G {
+    EXPRESSION -> COLUMN
+    EXPRESSION -> KEYWORD
+    EXPRESSION -> ARG
+    COLUMN -> ID
+    KEYWORD -> EQL
+    ARG -> 3
+}
