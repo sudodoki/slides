@@ -9,6 +9,10 @@ output: index.html
 
 --
 
+<img src="img/dragon.gif" style="height:100%; border: 0; transform: scale(3)"> 
+
+--
+
 # Peg.js and custom grammars
 <h1 style="text-transform: none">https://git.io/vH1iV</h1>
 
