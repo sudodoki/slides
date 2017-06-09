@@ -337,14 +337,15 @@ rest = ')' group
 ```
 
 --
-# Run action
+## Run action
 ```js
 start = FLOAT
 SIGN = "-" / "+"
 DIGIT = [0-9]
 INTEGER = 
   d:DIGIT int:INTEGER
-  { /* other side effect */ return d + int}
+  { /* other side effect */
+    return d + int }
   / d:DIGIT 
   { return d }
 ```
@@ -352,10 +353,12 @@ INTEGER =
 # Helpers
 ## JS code at top of grammar file
 
-```{
+```
+{
 const notNull = (thing) =>
   thing != null
-}```
+}
+```
 
 --
 

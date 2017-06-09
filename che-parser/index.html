@@ -2115,13 +2115,14 @@ rest = &#39;)&#39; group
 
   </section>
   <section>
-    <h1 id="run-action">Run action</h1>
+    <h2 id="run-action">Run action</h2>
 <pre><code class="lang-js">start = FLOAT
 SIGN = <span class="hljs-string">"-"</span> / <span class="hljs-string">"+"</span>
 DIGIT = [<span class="hljs-number">0</span><span class="hljs-number">-9</span>]
 INTEGER = 
   d:DIGIT int:INTEGER
-  { <span class="hljs-comment">/* other side effect */</span> <span class="hljs-keyword">return</span> d + int}
+  { <span class="hljs-comment">/* other side effect */</span>
+    <span class="hljs-keyword">return</span> d + int }
   / d:DIGIT 
   { <span class="hljs-keyword">return</span> d }</code></pre>
 
@@ -2129,7 +2130,8 @@ INTEGER =
   <section>
     <h1 id="helpers">Helpers</h1>
 <h2 id="js-code-at-top-of-grammar-file">JS code at top of grammar file</h2>
-<pre><code class="lang-{">const notNull = (thing) =&gt;
+<pre><code>{
+const notNull = (thing) =&gt;
   thing != null
 }</code></pre>
 
