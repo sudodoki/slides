@@ -541,3 +541,8 @@ equalOp = ['equal']i 's'i?
 + [CYK Parsing algorithm](https://www.cs.bgu.ac.il/~michaluz/seminar/CKY1.pdf)
 + [You could have invented Parser Combinators](http://theorangeduck.com/page/you-could-have-invented-parser-combinators)
 + [Earley Parsing Explained](http://loup-vaillant.fr/tutorials/earley-parsing/)
+
+--
+
+# Questions?
+## Book thingy
