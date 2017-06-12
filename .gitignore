@@ -2,3 +2,7 @@
 node_modules
 _site
 */plan.txt
+# Talks I don't want to make public for various reasons
+elm-google-maps
+reactive-conf-summary
+this-is-this

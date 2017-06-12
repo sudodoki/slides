@@ -14,6 +14,7 @@ Slides by me
 + [Lighting on how to do lightings](how-to-slides) - KPIJS March 2016. [Video](https://www.youtube.com/watch?v=VQylfyW3Qac)
 + [Programming as analogy, pt.2](rubymeditation-april-16) - Rubymeditation #8, April 2016
 + [Beauty of everyday tools](lviv-js-august-2016) – [August 2016 @ LvivJS](http://www.lvivjs.org.ua/)
-+ [React: lessons learned](react-lessons-learned) – December 2016. Introish + experience.
-+ [React: 101](react-101) – Jan 2017. Intro.
-+ [cljs for impatient](cljs-for-impatient) – Mar 2017.
++ [React: lessons learned](react-lessons-learned) – December 2016. Introish + experience.  – Internal.
++ [React: 101](react-101) – Jan 2017. Intro. – Internal.
++ [cljs for impatient](cljs-for-impatient) – Mar 2017 – [KhJS](http://khjs.org/).
++ [Peg.js and custom grammars](che-parser) – Jun 2017 – [ChernivtsiJS](http://chernivtsi.js.org)
