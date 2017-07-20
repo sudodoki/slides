@@ -182,13 +182,13 @@ const descend = (input) => {
 
 ```js
 const term = (input) => {
- result.push(['term'])
+ result.push(['term']);
  digit(input);
  if (input[curIndex + 1]) {
    sign(input);
    term(input);
-   return
- } else { return } }
+ }
+}
 ```
 
 --
