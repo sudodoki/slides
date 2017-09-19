@@ -153,7 +153,7 @@ output: index.html
 
 ## SHA1
 ### `BADF00D`
-### Helps keeping track of things
+### Helps keep track of things
 
 --
 
