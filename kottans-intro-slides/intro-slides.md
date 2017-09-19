@@ -73,7 +73,7 @@ output: index.html
 
 ## Глаза
 + не работайте за монитором в темноте 
-+ [f.lux](https://justgetflux.com/)
++ [MacOS night shift](https://www.macrumors.com/how-to/night-shift-macos-sierra-10-12-4/), [f.lux](https://justgetflux.com/)
 + упражнения а-ля http://blimb.su/
 
 --
@@ -145,12 +145,94 @@ output: index.html
 
 --
 
+# git
++ VCS / <abbr title="Source control management">SCM</abbr> created by Linux core developers coming from frustrations of using tools of that time
++ Based on snapshot* of trees (not diffs)
+
+--
+
+## SHA1
+### `BADF00D`
+### Helps keeping track of things
+
+--
+
+# Storing
++ blob
++ tree
++ commit
+
+--
+
+## Blob
+- file content 
++ `git cat-file -p 9ff9838005211028123c1a8190509577f08a6f30`
+```
+markdown: rdiscount⏎
+```
+
+--
+
+## Tree
+- mode, blob / tree, sha1, name
++ `git cat-file -p 9b3bc842f3c364539235052d6ddb957a06494c9c`
+```
+100644 blob 19f3e164fa7904ccf3563c96a33c5a9c6269defa  .gitignore
+100644 blob bc782b70ada00943f8c65f4fa2489f0015a51dca  README.md
+100644 blob 9ff9838005211028123c1a8190509577f08a6f30  _config.yml
+040000 tree 1863648476392b381bdbf73d57f3db8c25e2ab9e  che-parser
+040000 tree dde0cb98b9f38d6b5644ea8a4d7efda43968ed2e  cljs-for-impatient
+…
+```
+--
+
+## Commit
++ can have 2 lines with 'parent'
++ `git cat-file -p 02c5dfd6530c6b3579b919195b2cd250683c0e68`
+
+```
+tree 9b3bc842f3c364539235052d6ddb957a06494c9c
+parent 4a6ae7140522837b9f8170613e1959898aba96e1
+author sudodoki <smd.deluzion@gmail.com> 1505812082 +0300
+committer sudodoki <smd.deluzion@gmail.com> 1505812143 +0300
+
+Typoes / fonts / wording
+```
+
+--
+
+## Ok, where is history stored?
+### Nowhere, it calculated based on parent
+![](http://sudodoki.github.io/slides/lviv-js-august-2016/images/git-graphs.png)
+
+--
+
+![](http://sudodoki.github.io/slides/lviv-js-august-2016/images/branch-2.png)
+
+--
+
+### Merge
+![](http://sudodoki.github.io/slides/lviv-js-august-2016/images/merge.png)
+
+--
+
+### Rebase
+![](http://sudodoki.github.io/slides/lviv-js-august-2016/images/rebase.png)
+
+--
+
+## Ok, what are branches?
+### It's just refs
++ ref = hash of commit
+
+--
+
 ### git - обычно самое сложное,
 ### с чем приходится начинать работать
 + rebase vs merge
-+ refs
++ refs / HEAD
 + хуки
-+ куча странных вещей (`git instaweb --start -p 8000 -d webrick`)
++ куча странных вещей (`git instaweb --start -p 8000 -d webrick`, `master@{one.week.ago}`)
 
 --
 

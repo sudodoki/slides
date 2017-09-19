@@ -1853,7 +1853,7 @@ based on dark.css by Ivan Sagalaev
     <h2 id="-">Глаза</h2>
 <ul>
 <li>не работайте за монитором в темноте </li>
-<li><a href="https://justgetflux.com/">f.lux</a></li>
+<li><a href="https://www.macrumors.com/how-to/night-shift-macos-sierra-10-12-4/">MacOS night shift</a>, <a href="https://justgetflux.com/">f.lux</a></li>
 <li>упражнения а-ля <a href="http://blimb.su/">http://blimb.su/</a></li>
 </ul>
 
@@ -1946,13 +1946,101 @@ based on dark.css by Ivan Sagalaev
 
   </section>
   <section>
+    <h1 id="git">git</h1>
+<ul>
+<li>VCS / <abbr title="Source control management">SCM</abbr> created by Linux core developers coming from frustrations of using tools of that time</li>
+<li>Based on snapshot* of trees (not diffs)</li>
+</ul>
+
+  </section>
+  <section>
+    <h2 id="sha1">SHA1</h2>
+<h3 id="-badf00d-"><code>BADF00D</code></h3>
+<h3 id="helps-keeping-track-of-things">Helps keeping track of things</h3>
+
+  </section>
+  <section>
+    <h1 id="storing">Storing</h1>
+<ul>
+<li>blob</li>
+<li>tree</li>
+<li>commit</li>
+</ul>
+
+  </section>
+  <section>
+    <h2 id="blob">Blob</h2>
+<ul>
+<li>file content </li>
+<li><code>git cat-file -p 9ff9838005211028123c1a8190509577f08a6f30</code><pre><code>markdown: rdiscount⏎</code></pre>
+</li>
+</ul>
+
+  </section>
+  <section>
+    <h2 id="tree">Tree</h2>
+<ul>
+<li>mode, blob / tree, sha1, name</li>
+<li><code>git cat-file -p 9b3bc842f3c364539235052d6ddb957a06494c9c</code><pre><code>100644 blob 19f3e164fa7904ccf3563c96a33c5a9c6269defa  .gitignore
+100644 blob bc782b70ada00943f8c65f4fa2489f0015a51dca  README.md
+100644 blob 9ff9838005211028123c1a8190509577f08a6f30  _config.yml
+040000 tree 1863648476392b381bdbf73d57f3db8c25e2ab9e  che-parser
+040000 tree dde0cb98b9f38d6b5644ea8a4d7efda43968ed2e  cljs-for-impatient
+…</code></pre>
+</li>
+</ul>
+
+  </section>
+  <section>
+    <h2 id="commit">Commit</h2>
+<ul>
+<li>can have 2 lines with &#39;parent&#39;</li>
+<li><code>git cat-file -p 02c5dfd6530c6b3579b919195b2cd250683c0e68</code></li>
+</ul>
+<pre><code>tree 9b3bc842f3c364539235052d6ddb957a06494c9c
+parent 4a6ae7140522837b9f8170613e1959898aba96e1
+author sudodoki &lt;smd.deluzion@gmail.com&gt; 1505812082 +0300
+committer sudodoki &lt;smd.deluzion@gmail.com&gt; 1505812143 +0300
+
+Typoes / fonts / wording</code></pre>
+
+  </section>
+  <section>
+    <h2 id="ok-where-is-history-stored-">Ok, where is history stored?</h2>
+<h3 id="nowhere-it-calculated-based-on-parent">Nowhere, it calculated based on parent</h3>
+<p><img src="http://sudodoki.github.io/slides/lviv-js-august-2016/images/git-graphs.png" alt=""></p>
+
+  </section>
+  <section>
+    <p><img src="http://sudodoki.github.io/slides/lviv-js-august-2016/images/branch-2.png" alt=""></p>
+
+  </section>
+  <section>
+    <h3 id="merge">Merge</h3>
+<p><img src="http://sudodoki.github.io/slides/lviv-js-august-2016/images/merge.png" alt=""></p>
+
+  </section>
+  <section>
+    <h3 id="rebase">Rebase</h3>
+<p><img src="http://sudodoki.github.io/slides/lviv-js-august-2016/images/rebase.png" alt=""></p>
+
+  </section>
+  <section>
+    <h2 id="ok-what-are-branches-">Ok, what are branches?</h2>
+<h3 id="it-s-just-refs">It&#39;s just refs</h3>
+<ul>
+<li>ref = hash of commit</li>
+</ul>
+
+  </section>
+  <section>
     <h3 id="git-">git - обычно самое сложное,</h3>
 <h3 id="-">с чем приходится начинать работать</h3>
 <ul>
 <li>rebase vs merge</li>
-<li>refs</li>
+<li>refs / HEAD</li>
 <li>хуки</li>
-<li>куча странных вещей (<code>git instaweb --start -p 8000 -d webrick</code>)</li>
+<li>куча странных вещей (<code>git instaweb --start -p 8000 -d webrick</code>, <code>master@{one.week.ago}</code>)</li>
 </ul>
 
   </section>
