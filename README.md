@@ -18,3 +18,4 @@ Slides by me
 + [React: 101](react-101) – Jan 2017. Intro. – Internal.
 + [cljs for impatient](cljs-for-impatient) – Mar 2017 – [KhJS](http://khjs.org/).
 + [Peg.js and custom grammars](che-parser) – Jun 2017 – [ChernivtsiJS](http://chernivtsi.js.org). [Video](https://youtu.be/N5b1PhV5uXM)
++ [lisp-⚡️](lisp-⚡️) – Nov 2017 – KyivJS
