@@ -60,7 +60,7 @@ output: index.html
 
 --
 
-## Generic relations we are tryign to tie together
+## Generic relations we are trying to tie together
 + numerical
 + categorical
 + temporal
@@ -167,4 +167,4 @@ output: index.html
 
 # Resources
 + [egghead's d3 course](https://egghead.io/courses/build-interactive-javascript-charts-with-d3-v4)
-+ [oficial wiki](https://github.com/d3/d3/wiki)
++ [official wiki](https://github.com/d3/d3/wiki)
