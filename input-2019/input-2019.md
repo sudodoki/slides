@@ -30,7 +30,7 @@ output: index.html
 ### Your first community
 ![](images/title_community.gif)
 <div class="no-uppercase">
-<h2>[https://git.io/fjW3j](https://git.io/fjW3j)</h2>
+<h2>[https://git.io/fjWGL](https://git.io/fjWGL)</h2>
 <h2>[http://t.me/sudodoki](http://t.me/sudodoki)</h2>
 </div>
 
