@@ -106,7 +106,9 @@ output: index.html
 --
 
 ## Let's begin
-
+<div class="plain-image">
+![](./images/i_made_up_study_group_community.gif)
+</div>
 
 --
 
@@ -137,9 +139,9 @@ output: index.html
 - в идеале заранее всем изветсное место (чей-то офис/коворкинг)
 
 --
-<div class="plain-image">
-![](./images/i_made_up_study_group_community.gif)
-</div>
+
+![](./images/cool_cool_community.gif)
+
 --
 
 ## Как не бросить
