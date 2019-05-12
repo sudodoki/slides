@@ -58,7 +58,9 @@ output: index.html
 --
 
 # Study group
+<div class="plain-image">
 ![](./images/how_to_study_community.gif)
+</div>
 
 --
 
