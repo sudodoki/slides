@@ -80,7 +80,7 @@ output: index.html
 </div>
 --
 
-
+# Від чого болить
 - 👎 чіпляються до форматування і лапок
 <li class="fragment">
 👎 замість того, щоб валідувати бізнес-логіку
@@ -91,6 +91,7 @@ output: index.html
 
 --
 
+# Як краще?
 - 👍 поради щодо зменшення складності / кращі підходи для вирішення задачі
 <li class="fragment">
 👍 якщо є більше одного способу, обговоріть +/- інших
@@ -112,7 +113,7 @@ output: index.html
 ## Перекладіть це на машину
 ## 🤖
 - [editorconfig](https://editorconfig.org/)
-- автоматичне форматування коду (rubocop / prettier / black), лінтери
+- автоматичне форматування коду (rubocop / prettier / black), лінтери (rubocop / eslint / flake8 and [alternatives](https://github.com/wemake-services/wemake-python-styleguide))
 - (юніт) тести на бізнес логіку
 - аналізатор невживанного коду (IDE, [@joshuaclayton/unused](https://unused.codes/), [vulture](https://pypi.org/project/vulture/))
 - детекція дубльованого коду ([@kuchrenko/jscpd](https://github.com/kucherenko/jscpd))
@@ -146,6 +147,7 @@ indent_style = tab
 
 --
 
+# Як краще?
 + ✍️ документація (гарна нагода її покращити)
 + 🤖 зафіксувати залежності (не Ruby проблема😁)
 + 🤖 rake/make скрипти для зовнішніх залежностей
@@ -159,6 +161,7 @@ indent_style = tab
 
 --
 
+# Що змінити?
 + ✍️ радитися
 + ✍️ не боятися пропонувати нові способи організовувати код
 + ✍️ переглядати попередні рішення
@@ -175,6 +178,7 @@ indent_style = tab
 
 -- 
 
+# Як краще?
 + 🤖 автоматизувати CI/CD
 + 🤖 infrastructure-as-a-code (terraform, [etc](https://github.com/topics/infrastructure-as-code))
 + ✍️ частіше релізитись
@@ -187,13 +191,13 @@ indent_style = tab
 
 --
 
-- ✍️[git flow](https://nvie.com/posts/a-successful-git-branching-model/)
+- ✍️ [some git workflow](https://www.endpoint.com/blog/2014/05/02/git-workflows-that-work)
 
 ![](images/git_flow.png)
 
 --
 
-
+# Що змінити?
 - ✍️ декомпозиція коду, [service objects](https://www.toptal.com/ruby-on-rails/rails-service-objects-tutorial) FTW
 - ✍️ час подумати про мікросервіси?
 
@@ -204,6 +208,7 @@ indent_style = tab
 
 --
 
+# Як краще?
 - 🤖 телеметрія (cloud built-in)
 - 🤖 логування (elk / fluentd / fluentbit)
 - 🤖 інші метрики ([prometheus](https://prometheus.io/) + [grafana](https://prometheus.io/docs/visualization/grafana/), [datadog](https://www.datadoghq.com/))
@@ -307,9 +312,11 @@ indent_style = tab
 --
 
 # Related (?)
-- [12 steps to better code](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+- [Art of Scalability](https://www.amazon.com/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802)
 - [The Phoenix Project](https://www.amazon.com/gp/product/B078Y98RG8/)
 - [100 releases per day @ Preply](https://www.youtube.com/watch?v=EuKvUS4oi1Q&feature=emb_title)
+- [12 steps to better code](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) oldie, but should have most of the boxes checked in 2020
+- [awesome linters ](https://github.com/caramelomartins/awesome-linters)
 
 --
 

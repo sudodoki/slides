@@ -1,0 +1,15 @@
+background slide:
+- kottans
+- languages used
+
+http://sudodoki.name/slides/pivorak-2020/#/7 and others
+make font bigger, add headers
+
+when taking about tools:
++ personal experience with tools
+
+> less about git flow
+
+copypaste detection & abstractions - have clear point
+
+add things like docker to references
