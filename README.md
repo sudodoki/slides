@@ -19,4 +19,4 @@ Slides by me
 + [cljs for impatient](cljs-for-impatient) – Mar 2017 – [KhJS](http://khjs.org/).
 + [Peg.js and custom grammars](che-parser) – Jun 2017 – [ChernivtsiJS](http://chernivtsi.js.org). [Video](https://youtu.be/N5b1PhV5uXM)
 + [lisp-⚡️](lisp-⚡️) – Nov 2017 – KyivJS
-+ [Communities 101](https://docs.google.com/presentation/d/1IGGAjhFuFlaQ4PjOOgSfw8VET-dgPT1hVZoeLYzEm0M/edit) + [RR ML SS](https://docs.google.com/presentation/d/1sfP0bV54y0oIj-jdduU3fAfiYjEc1-wSSQOMmvhIIHE/edit) + (ungiven [input study group talk](input-2019)) - May 2019 - [inputConf](https://inputconf.org/)
++ [Communities 101](https://docs.google.com/presentation/d/1IGGAjhFuFlaQ4PjOOgSfw8VET-dgPT1hVZoeLYzEm0M/edit) ([Video](https://www.youtube.com/watch?v=DfpjPcemXeE&feature=youtu.be&t=4323)) + [RR ML SS](https://docs.google.com/presentation/d/1sfP0bV54y0oIj-jdduU3fAfiYjEc1-wSSQOMmvhIIHE/edit) ([Video](https://youtu.be/jMfMzQeY7ng?t=47)) + (ungiven [input study group talk](input-2019)) - May 2019 - [inputConf](https://inputconf.org/)
