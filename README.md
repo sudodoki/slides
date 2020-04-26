@@ -15,7 +15,7 @@ Slides by me
 + [Programming as analogy, pt.2](rubymeditation-april-16) - Rubymeditation #8, April 2016
 + [Beauty of everyday tools](lviv-js-august-2016) – [August 2016 @ LvivJS](http://www.lvivjs.org.ua/). [Video](https://youtu.be/79J28-59XFo)
 + [React: lessons learned](react-lessons-learned) – December 2016. Introish + experience.  – Internal.
-+ [React: 101](react-101) – Jan 2017. Intro. – Internal.
++ [React: 101](react-101) – Jan 2017. Intro. – Internal. [Video](https://youtu.be/M0a-taqamK0?list=PLr1siHsWN79A_U2x5H_G1ohhUr1okt3nc)
 + [cljs for impatient](cljs-for-impatient) – Mar 2017 – [KhJS](http://khjs.org/).
 + [Peg.js and custom grammars](che-parser) – Jun 2017 – [ChernivtsiJS](http://chernivtsi.js.org). [Video](https://youtu.be/N5b1PhV5uXM)
 + [lisp-⚡️](lisp-⚡️) – Nov 2017 – KyivJS. [Video](https://youtu.be/3WzDXf135N8)
