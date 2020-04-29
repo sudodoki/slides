@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "easystarjs": "^0.2.3",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.0",
     "webcamjs": "^1.0.4"
   }
 }
