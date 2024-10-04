@@ -20,3 +20,4 @@ Slides by me
 + [Peg.js and custom grammars](che-parser) – Jun 2017 – [ChernivtsiJS](http://chernivtsi.js.org). [Video](https://youtu.be/N5b1PhV5uXM)
 + [lisp-⚡️](lisp-⚡️) – Nov 2017 – KyivJS. [Video](https://youtu.be/3WzDXf135N8)
 + [Communities 101](https://docs.google.com/presentation/d/1IGGAjhFuFlaQ4PjOOgSfw8VET-dgPT1hVZoeLYzEm0M/edit) ([Video](https://www.youtube.com/watch?v=DfpjPcemXeE&feature=youtu.be&t=4323)) + [RR ML SS](https://docs.google.com/presentation/d/1sfP0bV54y0oIj-jdduU3fAfiYjEc1-wSSQOMmvhIIHE/edit) ([Video](https://youtu.be/jMfMzQeY7ng?t=47)) + (ungiven [input study group talk](input-2019)) - May 2019 - [inputConf](https://inputconf.org/)
++ [Federated learning: out of reach no matter how close](2024-fwdays.pdf) – [Python + DS fwdays 2024](https://fwdays.com/event/python-ds-fwdays-2024). [Video](https://www.youtube.com/watch?v=MJFQXQe_Duc)
